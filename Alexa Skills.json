@@ -1,0 +1,110 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "particle",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ParticleIntent",
+                    "slots": [
+                        {
+                            "name": "sensor",
+                            "type": "LITERAL"
+                        },
+                        {
+                            "name": "light",
+                            "type": "LITERAL"
+                        },
+                        {
+                            "name": "onoff",
+                            "type": "LITERAL"
+                        },
+                        {
+                            "name": "statusSlot",
+                            "type": "LITERAL"
+                        },
+                        {
+                            "name": "dollars",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "cents",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "devices",
+                            "type": "LITERAL"
+                        }
+                    ],
+                    "samples": [
+                        "ParticleIntent {dollars}",
+                        "ParticleIntent {green|light} ",
+                        "ParticleIntent {red|light} ",
+                        "ParticleIntent {humidity|sensor}",
+                        "ParticleIntent {temperature|sensor}",
+                        "ParticleIntent {cents}",
+                        "ParticleIntent what is the {temperature|sensor} here",
+                        "ParticleIntent what is the {humidity|sensor} here",
+                        "ParticleIntent turn {off|onoff} {green|light} light",
+                        "ParticleIntent turn {off|onoff} {red|light} light",
+                        "ParticleIntent turn {on|onoff} {green|light} light",
+                        "ParticleIntent turn {on|onoff} {red|light} light",
+                        "ParticleIntent check {shower|statusSlot} status",
+                        "ParticleIntent check {electricity|statusSlot} status",
+                        "ParticleIntent set electricity budget to {dollars} dollars",
+                        "ParticleIntent set electricity budget to {cents} cents",
+                        "ParticleIntent set electricity budget to {cents} cent",
+                        "ParticleIntent set electricity budget to {dollars} dollars and {cents} cents",
+                        "ParticleIntent set electricity budget to {dollars} dollar",
+                        "ParticleIntent set electricity budget to {dollars} dollar and {cents} cents",
+                        "ParticleIntent set electricity budget to {dollars} dollar and {cents} cent",
+                        "ParticleIntent turn {off|onoff} the {fan|devices}",
+                        "ParticleIntent turn {on|onoff} the {fan|devices}",
+                        "ParticleIntent turn {off|onoff} the {light|devices}",
+                        "ParticleIntent turn {on|onoff} the {light|devices}"
+                    ]
+                },
+                {
+                    "name": "HelpIntent",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "Lights",
+                    "slots": [
+                        {
+                            "name": "onoff",
+                            "type": "LITERAL"
+                        },
+                        {
+                            "name": "light",
+                            "type": "LITERAL"
+                        }
+                    ],
+                    "samples": [
+                        "ParticleIntent turn {off|onoff} {green|light} light",
+                        "ParticleIntent turn {on|onoff} {red|light} light",
+                        "ParticleIntent turn {off|onoff} {red|light} light",
+                        "ParticleIntent turn {on|onoff} {green|light} light"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
