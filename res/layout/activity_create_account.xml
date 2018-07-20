@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/second_layer"
+    tools:context=".CreateAccount">
+
+
+    <EditText
+        android:id="@+id/editTextUsernameCreate"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="146dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextUsernameCreate"
+        android:layout_alignStart="@+id/editTextUsernameCreate"
+        android:layout_marginBottom="-146dp"
+        android:text="Email"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/editTextPasswordCreate"
+        android:layout_width="350dp"
+
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editTextUsernameCreate"
+        android:layout_marginTop="258dp"
+        android:text="Password"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/editTextPasswordRepeat"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="99dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextPasswordRepeat"
+        android:layout_alignStart="@+id/editTextUsernameCreate"
+        android:text="Repeat Password"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textCreateAccountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editTextUsernameCreate"
+        android:layout_marginTop="37dp"
+        android:text="Create Your Account"
+        android:textColor="@android:color/background_light"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/buttonCreateAccount"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+
+        android:background="@drawable/btn"
+        android:text="Create Account" />
+</RelativeLayout>

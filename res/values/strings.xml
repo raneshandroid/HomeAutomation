@@ -1,0 +1,11 @@
+<resources>
+
+
+    <string name="app_name">SmartBudget</string>
+    <string name="facebook_app_id">286006535475014</string>
+    <string name="fb_login_protocol_scheme">fb286006535475014</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
