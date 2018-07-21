@@ -1,0 +1,15 @@
+{
+  "eventName": "pushbullet",
+  "url": "https://api.pushbullet.com/v2/pushes",
+  "requestType": "POST",
+  "headers": {
+    "Authorization": "Bearer o.3myEDF7j8O2PdeF4JqvbEXxKUi0XxN7s",
+    "Content-Type": "application/json"
+  },
+  "json": {
+      "type": "note",
+      "title": "Budget Status",
+      "body": "{{SPARK_EVENT_VALUE}}"
+  },
+  "mydevices": true
+}
